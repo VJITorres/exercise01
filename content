@@ -1,0 +1,51 @@
+public class KPopGroups {
+    public static void main(String[] args) {
+        // Group 1
+        String group1Name = "NovaSol";
+        int group1Members = 7;
+        String group1Company = "JYP";
+
+        // Group 2
+        String group2Name = "Stell";
+        int group2Members = 4;
+        String group2Company = "YG";
+
+        // Group 3
+        String group3Name = "WhiME";
+        int group3Members = 5;
+        String group3Company = "SM";
+
+        // Display group 1 information
+        System.out.println("Fictional K-Pop Group 1");
+        System.out.println("Group Name: " + group1Name);
+        System.out.println("Number of Members: " + group1Members);
+        System.out.println("Company: " + group1Company);
+        System.out.println();
+
+        // Display group 2 information
+        System.out.println("Fictional K-Pop Group 2");
+        System.out.println("Group Name: " + group2Name);
+        System.out.println("Number of Members: " + group2Members);
+        System.out.println("Company: " + group2Company);
+        System.out.println();
+
+        // Display group 3 information
+        System.out.println("Fictional K-Pop Group 3");
+        System.out.println("Group Name: " + group3Name);
+        System.out.println("Number of Members: " + group3Members);
+        System.out.println("Company: " + group3Company);
+        System.out.println();
+
+        // Calculate total number of members
+        int totalMembers = group1Members + group2Members + group3Members;
+        System.out.println("Total Number of members of the 3 mentioned K-Pop Groups: " + totalMembers);
+
+        // Check if WhiMe and Stell are from the same company
+        boolean sameCompany = group2Company.equals(group3Company);
+        System.out.println("WhiMe and Stell are from the same company (true/false): " + sameCompany);
+
+        // Check if NovaSol has more than 3 members
+        boolean isNovaSolMoreThan3 = group1Members > 3;
+        System.out.println("NovaSol has more than 3 members (true/false): " + isNovaSolMoreThan3);
+    }
+}
